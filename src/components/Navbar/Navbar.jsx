@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Twitter, CircleUserRound, Globe, Folder, GraduationCap, Menu, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('profile');
@@ -18,7 +19,6 @@ export default function Navbar() {
     { name: 'Projects', icon: <Folder />, sectionId: 'projects' },
   ];
 
-  // Smooth scroll function
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -30,15 +30,15 @@ export default function Navbar() {
         top: offsetPosition,
         behavior: 'smooth'
       });
-      setIsMobileMenuOpen(false); // Close mobile menu after click
+      setIsMobileMenuOpen(false);
     }
   };
 
-  // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
       const sections = Menu_items.map(item => item.sectionId);
-      const scrollPosition = window.scrollY + 150;
+      const navbarHeight = 80;
+      const scrollPosition = window.scrollY + navbarHeight + 20;
 
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
@@ -60,33 +60,40 @@ export default function Navbar() {
 
   return (
     <div className='flex items-center justify-center h-16 select-none sticky top-0 z-50 bg-[#fafafa]'>
-      <nav className="w-11/12 md:w-3/4 mt-4 h-12 bg-white shadow-md p-4 flex justify-between items-center rounded-3xl">
-        {/* Logo */}
+      <nav className="w-11/12 md:w-3/4 mt-4 h-12 bg-white shadow-md p-4 flex justify-between items-center rounded-full">
         <div className='flex items-center justify-center gap-3'>
           <img src="https://res.cloudinary.com/dglbqay4e/image/upload/v1762235448/logo_iizuc7.png" alt="logo" className='h-10 md:h-12 object-contain rounded-3xl' />
         </div>
 
-        {/* Desktop Menu Items */}
         <div className='hidden md:block'>
-          <ul className="flex items-center gap-3 mx-4">
+          {/* Make the container relative */}
+          <ul className="relative flex items-center gap-3 mx-4">
             {Menu_items.map((item) => (
               <li 
                 key={item.name} 
                 onClick={() => scrollToSection(item.sectionId)}
                 className={`flex items-center gap-1.5 cursor-pointer transition-all duration-300 px-3 py-2 rounded-full ${
                   activeSection === item.sectionId
-                    ? 'bg-gray-900 text-white' 
-                    : 'text-gray-600 hover:bg-gray-900 hover:text-white'
-                }`}
+                    ? 'text-white' // Only change text color
+                    : 'text-gray-600 hover:text-gray-900'
+                } relative z-10`}
               >
+                {/* This is the sliding pill */}
+                {activeSection === item.sectionId && (
+                  <motion.div
+                    layoutId="active-pill" // This ID links the pills
+                    className="absolute inset-0 bg-gray-900 rounded-full"
+                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    style={{ zIndex: -1 }}
+                  />
+                )}
                 {item.icon}
-                <span className="text-sm font-medium">{item.name}</span>
+                <span className="text-sm font-bold">{item.name}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Desktop Social Icons */}
         <div className="hidden md:flex items-center gap-6">
           {Menu_icons.map((item) => (
             <a
@@ -102,7 +109,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button 
           className="md:hidden text-gray-600 hover:text-gray-900"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -112,10 +118,9 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile Menu Dropdown */}
+      {/* You can also animate the mobile menu! */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-20 left-0 right-0 mx-4 bg-white shadow-lg rounded-2xl p-4 z-40">
-          {/* Mobile Menu Items */}
           <ul className="space-y-2 mb-4 pb-4 border-b border-gray-200">
             {Menu_items.map((item) => (
               <li 
@@ -133,7 +138,6 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Mobile Social Icons */}
           <div className="flex items-center justify-center gap-6 pt-2">
             {Menu_icons.map((item) => (
               <a
