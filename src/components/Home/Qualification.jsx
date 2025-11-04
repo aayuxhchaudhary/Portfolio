@@ -9,7 +9,7 @@ export default function Qualification() {
       field: 'Computer Science',
       institution: 'Kurukshetra University',
       location: 'Kurukshetra, Haryana',
-      period: '2025',
+      period: '2025-Present',
       grade: 'CGPA: 8.5/10'
     },
     {
@@ -25,7 +25,7 @@ export default function Qualification() {
   const experience = [
     {
       role: 'Software Development Intern',
-      company: 'Eclipse International',
+      company: 'Groww',
       location: 'New Delhi, India',
       period: '6 months (Jun 2025 - Dec 2025)',
       responsibilities: [
