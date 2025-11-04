@@ -17,7 +17,7 @@ export default function Qualification() {
       field: 'Science Stream',
       institution: 'IGPS Kaithal',
       location: 'Kaithal, Haryana',
-      period: '2025',
+      period: '2024',
       grade: 'Percentage: 85%'
     }
   ];
