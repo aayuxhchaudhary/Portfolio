@@ -8,7 +8,7 @@ import Footnote from './components/Home/Footnote.jsx'
 
 export default function App() {
   return (
-    <div className="min-h-screen w-full bg-[#fafafa] relative text-gray-900">
+    <div className="min-h-screen h-[100vh] w-full bg-[#fafafa] relative text-gray-900">
       <div
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
