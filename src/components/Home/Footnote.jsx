@@ -12,7 +12,7 @@ export default function Footnote() {
   ];
 
   return (
-    <footer className="bg-black text-gray-300 py-8 mt-auto">
+    <footer className="bg-black text-gray-300 py-8 mt-auto select-none">
       <div className="max-w-6xl mx-auto px-4">
         {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">

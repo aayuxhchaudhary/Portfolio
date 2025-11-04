@@ -62,7 +62,7 @@ export default function Profile() {
   };
 
   return (
-    <section className="relative w-full min-h-[80vh] flex justify-center items-center pt-24 pb-16">
+    <section className="relative w-full select-none min-h-[80vh] flex justify-center items-center pt-24 pb-16">
       <motion.div
         variants={containerVariants}
         initial="hidden"

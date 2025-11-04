@@ -60,7 +60,7 @@ export default function Qualification() {
   };
 
   return (
-    <div className="min-h-screen py-16 px-4">
+    <div className="min-h-screen select-none py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <motion.div
           className="text-center mb-12"

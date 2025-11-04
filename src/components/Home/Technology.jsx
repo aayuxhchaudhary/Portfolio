@@ -154,7 +154,7 @@ export default function Technology() {
   };
 
   return (
-    <div className="min-h-screen py-16 px-4">
+    <div className="min-h-screen select-none py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-12"
