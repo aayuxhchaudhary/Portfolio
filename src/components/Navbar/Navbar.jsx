@@ -14,8 +14,8 @@ export default function Navbar() {
   const Menu_items = [
     { name: 'Profile', icon: <CircleUserRound />, sectionId: 'profile' },
     { name: 'Technologies', icon: <Globe />, sectionId: 'technologies' },
-    { name: 'Projects', icon: <Folder />, sectionId: 'projects' },
     { name: 'Education', icon: <GraduationCap />, sectionId: 'education' },
+    { name: 'Projects', icon: <Folder />, sectionId: 'projects' },
   ];
 
   // Smooth scroll function
