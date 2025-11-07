@@ -102,7 +102,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+              className="bg-white z-10 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
               variants={cardVariants}
               whileHover={{ scale: 1.03 }}
             >

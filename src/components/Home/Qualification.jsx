@@ -94,7 +94,7 @@ export default function Qualification() {
               {education.map((edu, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                  className="bg-white z-10 rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
                   variants={cardVariants}
                   whileHover={{ scale: 1.03 }}
                 >

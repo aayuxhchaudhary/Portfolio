@@ -59,7 +59,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className='flex items-center justify-center h-16 select-none sticky top-0 z-50 bg-[#fafafa]'>
+    <div className='flex items-center justify-center h-16 select-none sticky top-0 z-50'>
       <nav className="w-11/12 md:w-3/4 mt-4 h-12 bg-white shadow-md p-4 flex justify-between items-center rounded-full">
         <div className='flex items-center justify-center gap-3'>
           <img src="https://res.cloudinary.com/dglbqay4e/image/upload/v1762235448/logo_iizuc7.png" alt="logo" className='h-10 md:h-12 object-contain rounded-3xl' />

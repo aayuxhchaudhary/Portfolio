@@ -178,7 +178,7 @@ export default function Technology() {
           {technologies.map((tech, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white z-10 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
               variants={cardVariants}
               whileHover={{ scale: 1.03 }}
             >
