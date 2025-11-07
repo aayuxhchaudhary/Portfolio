@@ -60,7 +60,7 @@ export default function Qualification() {
   };
 
   return (
-    <div className="min-h-screen select-none py-16 px-4">
+    <div className="min-h-screen select-none py-16 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -94,7 +94,7 @@ export default function Qualification() {
               {education.map((edu, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white z-10 rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                  className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative z-10"
                   variants={cardVariants}
                   whileHover={{ scale: 1.03 }}
                 >
@@ -147,7 +147,7 @@ export default function Qualification() {
               {experience.map((exp, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                  className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 relative z-10"
                   variants={cardVariants}
                   whileHover={{ scale: 1.03 }}
                 >
