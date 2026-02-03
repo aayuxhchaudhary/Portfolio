@@ -1,58 +1,40 @@
-import React from 'react';
-import { Github, ExternalLink, Folder } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Github, ExternalLink, Folder } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
-    {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack online shopping platform with payment integration and admin dashboard',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com/Ayushcenzo',
-      demo: 'https://example.com',
-      color: 'from-blue-800 to-cyan-800'
-    },
-    {
-      title: 'Task Management App',
-      description: 'Collaborative task tracker with real-time updates and team management',
-      tech: ['React', 'Firebase', 'Tailwind CSS'],
-      github: 'https://github.com/Ayushcenzo',
-      demo: 'https://example.com',
-      color: 'from-purple-800 to-pink-800'
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application with location-based forecasts and analytics',
-      tech: ['JavaScript', 'API Integration', 'CSS'],
-      github: 'https://github.com/Ayushcenzo',
-      demo: 'https://example.com',
-      color: 'from-orange-800 to-red-800'
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'Personal portfolio showcasing projects and skills with modern UI/UX',
-      tech: ['React', 'Tailwind CSS', 'Framer Motion'],
-      github: 'https://github.com/Ayushcenzo',
-      demo: 'https://example.com',
-      color: 'from-green-800 to-teal-800'
-    },
-    {
-      title: 'Chat Application',
-      description: 'Real-time messaging app with authentication and media sharing',
-      tech: ['React', 'Socket.io', 'Express', 'MongoDB'],
-      github: 'https://github.com/Ayushcenzo',
-      demo: 'https://example.com',
-      color: 'from-indigo-800 to-purple-800'
-    },
-    {
-      title: 'Blog Platform',
-      description: 'Content management system with rich text editor and user authentication',
-      tech: ['Next.js', 'PostgreSQL', 'Prisma'],
-      github: 'https://github.com/Ayushcenzo',
-      demo: 'https://example.com',
-      color: 'from-yellow-800 to-orange-800'
-    }
-  ];
+  {
+    title: "Portfolio Website",
+    description: "Modern portfolio showcasing projects and skills",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/Ayushcenzo",
+    demo: "https://www.ayushcenzo.tech",
+    color: "from-cyan-900 to-teal-950",
+  },
+  {
+    title: "Migration Hub (Hartron)",
+    description: "MERN platform for migration data and student enrollment",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    github: "https://github.com/Ayushcenzo",
+    demo: "https://www.migrationhub.in",
+    color: "from-indigo-900 to-blue-950",
+  },
+  {
+    title: "VertiVerse (In Development)",
+    description: "Manga & manhwa discovery and reading platform",
+    tech: ["React", "Node.js", "Vite", "Tailwind CSS"],
+    github: "https://github.com/Ayushcenzo",
+    color: "from-rose-900 to-purple-950",
+  },
+  {
+    title: "Falcon (In Development)",
+    description: "Luxury jewelry brand showcase & e-commerce",
+    tech: ["React", "Node.js", "Vite", "Tailwind CSS"],
+    github: "https://github.com/Ayushcenzo",
+    color: "from-amber-900 to-yellow-950",
+  },
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -70,7 +52,7 @@ export default function Projects() {
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 100,
         damping: 12,
       },
@@ -107,7 +89,7 @@ export default function Projects() {
               whileHover={{ scale: 1.03 }}
             >
               <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
                   {project.title}

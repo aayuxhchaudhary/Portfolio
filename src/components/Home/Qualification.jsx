@@ -25,13 +25,13 @@ export default function Qualification() {
   const experience = [
     {
       role: 'Software Development Intern',
-      company: 'Groww',
-      location: 'New Delhi, India',
-      period: '6 months (Jun 2025 - Dec 2025)',
+      company: 'Hartron Advance Skill Centre',
+      location: 'Kaithal, Haryana, India',
+      period: 'January 2026 - Present',
       responsibilities: [
-        'Developed and maintained web applications using React and Node.js',
-        'Collaborated with team members on feature implementations',
-        'Participated in code reviews and agile development processes'
+        'Developing and maintaining web applications using React and Node.js',
+        'Collaborating with team members on feature implementations',
+        'Participating in code reviews and agile development processes'
       ]
     }
   ];
