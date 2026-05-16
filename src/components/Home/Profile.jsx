@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import profile from "/src/components/Home/profile.jpeg";
 
 export default function Profile() {
-  const professionalText = `I'm a passionate first-year Computer Applications student with a strong focus on cybersecurity and web development. I thrive on solving complex problems and am dedicated to building efficient, scalable, and secure applications. I'm currently diving deep into Data Structures and Algorithms while honing my skills in technologies like React, Vite, and Java.`;
+  const professionalText = `I'm a passionate Computer Applications student with a strong focus on cybersecurity and web development. I thrive on solving complex problems and am dedicated to building efficient, scalable, and secure applications. I'm currently diving deep into Data Structures and Algorithms while honing my skills in technologies like React, Vite, and Java.`;
 
   const containerVariants = {
     hidden: { opacity: 0 },
