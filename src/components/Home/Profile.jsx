@@ -79,7 +79,7 @@ export default function Profile() {
             variants={textChildVariants}
             className="text-4xl font-semibold text-black mb-5"
           >
-            Ayush Chaudhary
+            Aayush Chaudhary
           </motion.h2>
           <motion.p
             variants={textChildVariants}
