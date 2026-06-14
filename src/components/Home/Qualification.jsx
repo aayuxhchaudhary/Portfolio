@@ -18,7 +18,7 @@ export default function Qualification() {
       institution: 'IGPS Kaithal',
       location: 'Kaithal, Haryana',
       period: '2024',
-      grade: 'Percentage: 85%'
+      grade: 'Percentage: 91%'
     }
   ];
 
