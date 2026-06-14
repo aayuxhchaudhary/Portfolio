@@ -9,7 +9,7 @@ export default function Qualification() {
       field: 'Computer Science',
       institution: 'Kurukshetra University',
       location: 'Kurukshetra, Haryana',
-      period: '2025 - Present',
+      period: '2024 - Present',
       grade: 'CGPA: 8.5/10'
     },
     {
