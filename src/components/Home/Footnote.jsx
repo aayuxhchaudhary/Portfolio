@@ -5,7 +5,7 @@ export default function Footnote() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'GitHub', icon: <Github className="w-5 h-5" />, link: 'https://github.com/Ayushcenzo' },
+    { name: 'GitHub', icon: <Github className="w-5 h-5" />, link: 'https://github.com/aayuxhchaudhary' },
     { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, link: 'https://www.linkedin.com/in/' },
     { name: 'Twitter', icon: <Twitter className="w-5 h-5" />, link: 'https://twitter.com/' },
     { name: 'Email', icon: <Mail className="w-5 h-5" />, link: 'mailto:your.email@example.com' },

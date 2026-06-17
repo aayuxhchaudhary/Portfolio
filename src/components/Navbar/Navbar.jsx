@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const Menu_icons = [
-    { name: 'GitHub', icon: <Github />, link: 'https://github.com/Ayushcenzo' },
+    { name: 'GitHub', icon: <Github />, link: 'https://github.com/aayuxhchaudhary' },
     { name: 'LinkedIn', icon: <Linkedin />, link: 'https://www.linkedin.com/in/' },
     { name: 'Twitter', icon: <Twitter />, link: 'https://twitter.com/' },
   ];

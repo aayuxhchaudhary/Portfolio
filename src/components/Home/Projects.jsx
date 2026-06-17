@@ -4,37 +4,45 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
-  {
-    title: "Portfolio Website",
-    description: "Modern portfolio showcasing projects and skills",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/Ayushcenzo",
-    demo: "https://www.ayushcenzo.tech",
-    color: "from-cyan-900 to-teal-950",
-  },
-  {
-    title: "Migration Hub (Hartron)",
-    description: "MERN platform for migration data and student enrollment",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
-    github: "https://github.com/Ayushcenzo",
-    demo: "https://www.migrationhub.in",
-    color: "from-indigo-900 to-blue-950",
-  },
-  {
-    title: "VertiVerse (In Development)",
-    description: "Manga & manhwa discovery and reading platform",
-    tech: ["React", "Node.js", "Vite", "Tailwind CSS"],
-    github: "https://github.com/Ayushcenzo",
-    color: "from-rose-900 to-purple-950",
-  },
-  {
-    title: "Falcon (In Development)",
-    description: "Luxury jewelry brand showcase & e-commerce",
-    tech: ["React", "Node.js", "Vite", "Tailwind CSS"],
-    github: "https://github.com/Ayushcenzo",
-    color: "from-amber-900 to-yellow-950",
-  },
-];
+    {
+      title: "Twigs",
+      description: "Minimalist image sharing and real-time chat platform with premium glassmorphic UI",
+      tech: ["React", "Node.js", "Socket.IO", "MongoDB", "Express"],
+      github: "https://github.com/aayuxhchaudhary/twigs_frontend",
+      demo: "https://twigs.ayushcenzo.tech",
+      color: "from-emerald-900 to-green-950",
+    },
+    {
+      title: "Portfolio Website",
+      description: "Modern portfolio showcasing projects and skills",
+      tech: ["React", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/aayuxhchaudhary",
+      demo: "https://www.ayushcenzo.tech",
+      color: "from-cyan-900 to-teal-950",
+    },
+    {
+      title: "Migration Hub (Hartron)",
+      description: "MERN platform for migration data and student enrollment",
+      tech: ["MongoDB", "Express", "React", "Node.js"],
+      github: "https://github.com/aayuxhchaudhary",
+      demo: "https://www.migrationhub.in",
+      color: "from-indigo-900 to-blue-950",
+    },
+    {
+      title: "VertiVerse (In Development)",
+      description: "Manga & manhwa discovery and reading platform",
+      tech: ["React", "Node.js", "Vite", "Tailwind CSS"],
+      github: "https://github.com/aayuxhchaudhary",
+      color: "from-rose-900 to-purple-950",
+    },
+    {
+      title: "Falcon (In Development)",
+      description: "Luxury jewelry brand showcase & e-commerce",
+      tech: ["React", "Node.js", "Vite", "Tailwind CSS"],
+      github: "https://github.com/aayuxhchaudhary",
+      color: "from-amber-900 to-yellow-950",
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
