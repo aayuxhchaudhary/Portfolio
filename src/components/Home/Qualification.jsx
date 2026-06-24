@@ -9,7 +9,7 @@ export default function Qualification() {
       field: 'Computer Science',
       institution: 'Kurukshetra University',
       location: 'Kurukshetra, Haryana',
-      period: '2024 - Present',
+      period: '2024',
       grade: 'CGPA: 8.5/10'
     },
     {
@@ -17,7 +17,7 @@ export default function Qualification() {
       field: 'Science Stream',
       institution: 'IGPS Kaithal',
       location: 'Kaithal, Haryana',
-      period: '2024',
+      period: '2021',
       grade: 'Percentage: 91%'
     }
   ];
